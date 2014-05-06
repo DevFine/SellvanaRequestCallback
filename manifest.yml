@@ -3,3 +3,8 @@ modules:
         version: 0.0.2
         title: Request Callback
         description: Request Callback module - quick order by phone
+
+        areas:
+            FCom_Frontend:
+                auto_use: [ layout, views ]
+

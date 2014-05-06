@@ -1,0 +1,2 @@
+/catalog/product:
+    - { hook: catalog/product/details:before_add_cart, views: request_callback }
