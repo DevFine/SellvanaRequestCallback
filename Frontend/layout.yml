@@ -1,2 +1,5 @@
 /catalog/product:
+    - view: head
+        do:
+            - [ css, "@DevFine_RequestCallback/Frontend/css/request_callback.css" ]
     - { hook: catalog/product/details:before_add_cart, views: request_callback }

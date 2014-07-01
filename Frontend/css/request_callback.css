@@ -1,0 +1,11 @@
+.callme-wrapper {
+    margin-top: 10px;
+}
+
+.callme-wrapper p {
+    font-style: italic;
+}
+
+#callme-expand {
+    cursor: pointer;
+}
