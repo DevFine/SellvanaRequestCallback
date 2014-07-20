@@ -3,6 +3,7 @@ modules:
         version: 0.0.2
         title: Request Callback
         description: Request Callback module - quick order by phone
+        translations: { en: en.php }
 
         areas:
             FCom_Frontend:

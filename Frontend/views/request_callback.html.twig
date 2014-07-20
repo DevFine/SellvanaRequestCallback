@@ -1,34 +1,33 @@
 <a data-toggle="modal" data-content="request a callback" href="#callme-dialog" class="btn btn-sm btn-primary"
-   id="callme-dialog-open"><span class="glyphicon glyphicon-phone-alt"></span>Request a Callback</a>
+   id="callme-dialog-open"><span class="glyphicon glyphicon-phone-alt"></span>{{ 'Request a Callback'|_ }}</a>
 
 <div class="modal fade" id="callme-dialog" tabindex="-1" role="dialog" aria-labelledby="request-callback-dialog"
      aria-hidden="true">
-
-    <!-- TODO: use translation -->
-
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Request a Callback</h4>
+                <h4 class="modal-title" id="myModalLabel">{{ 'Request a Callback'|_ }}</h4>
             </div>
             <div class="modal-body">
-                <p class="callme-hint alert alert-info">You can leave your telephone number and we will call you shortly</p>
+                <p class="callme-hint alert alert-info">
+                    {{ 'You can leave your telephone number and we will call you shortly'|_ }}
+                </p>
                 <div class="form-group overflow-hidden">
-                    <label class="col-md-3 control-label">Name:</label>
+                    <label class="col-md-3 control-label">{{ 'Name:'|_ }}</label>
                     <div class="col-md-9">
                         <input class="form-control col-md-4" name="callme-name">
                     </div>
                 </div>
                 <div class="form-group overflow-hidden">
-                    <label class="col-md-3 control-label">Phone number:</label>
+                    <label class="col-md-3 control-label">{{ 'Phone number:'|_ }}</label>
                     <div class="col-md-9">
                         <input class="form-control col-md-4" name="callme-phone">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary">{{ 'Submit:'|_ }}</button>
             </div>
         </div>
     </div>
