@@ -8,4 +8,6 @@ modules:
         areas:
             FCom_Frontend:
                 auto_use: [ layout, views ]
+                routing:
+                    - [ /devfine/.action, DevFine_RequestCallback_Frontend_Controller ]
 
