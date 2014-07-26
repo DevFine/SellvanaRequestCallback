@@ -9,6 +9,7 @@ class DevFine_RequestCallback_Frontend_Controller extends FCom_Frontend_Controll
     {
         $requestData = $this->BRequest;
         $name = $requestData->post('callme-name');
+
         $successMessage = $this->_(
             sprintf('%s, thank you for contacting us. We will get back to you in few minutes', $name)
         );
