@@ -1,6 +1,6 @@
 modules:
     DevFine_RequestCallback:
-        version: 0.0.2
+        version: 0.1.1
         title: Request Callback
         description: Request Callback module - quick order by phone
         translations: { en: en.php }
