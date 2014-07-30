@@ -11,3 +11,8 @@ modules:
                 routing:
                     - [ /devfine/.action, DevFine_RequestCallback_Frontend_Controller ]
 
+            FCom_Admin:
+                auto_use: [ views, layout ]
+                routing:
+                    - [ /callback, DevFine_RequestCallback_Admin_Controller_List.index ]
+

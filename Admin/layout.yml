@@ -1,0 +1,4 @@
+base:
+    - view: admin/nav
+        do:
+            - [ addNav, sales/callback, { label: Request Callback, href: /callback } ]
