@@ -4,3 +4,10 @@
             - [ css, "@DevFine_RequestCallback/Frontend/css/request_callback.css" ]
     - { hook: catalog/product/details:before_add_cart, views: request_callback_button }
     - { hook: main, views: request_callback_form }
+
+/checkout/cart:
+    - view: head
+        do:
+            - [ css, "@DevFine_RequestCallback/Frontend/css/request_callback.css" ]
+    - { hook: cart_upsell, views: request_callback_button }
+    - { hook: main, views: request_callback_form }

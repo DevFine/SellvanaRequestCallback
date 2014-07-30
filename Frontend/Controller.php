@@ -18,6 +18,13 @@ class DevFine_RequestCallback_Frontend_Controller extends FCom_Frontend_Controll
         }
 
         try {
+            /* Check if request has been made from the shopping cart page */
+            if (empty($requestData['product_id'])) {
+                $cart = $this->FCom_Sales_Model_Cart->sessionCart(true);
+                $requestData['cart_id'] = $cart->id();
+                unset($requestData['product_id']);
+            }
+
             $entity->submitRequest($requestData);
             $successMessage = $this->_(
                 sprintf('%s, thank you for contacting us. We will get back to you in few minutes',
