@@ -24,7 +24,17 @@ class DevFine_RequestCallback_Migrate extends BClass
         $table = $this->DevFine_RequestCallback_Model_Request->table();
         $this->BDb->ddlTableDef($table, [
             'COLUMNS' => [
-                'product_id'      => 'int unsigned',
+                'product_id' => 'int unsigned',
+            ],
+        ]);
+    }
+
+    public function upgrade__0_1_1__0_1_2()
+    {
+        $table = $this->DevFine_RequestCallback_Model_Request->table();
+        $this->BDb->ddlTableDef($table, [
+            'COLUMNS' => [
+                'cart_id' => 'int unsigned',
             ],
         ]);
     }
